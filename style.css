@@ -1,0 +1,43 @@
+body {
+    background-image: url("images/mushroom-background.png");
+    background-repeat: repeat;
+    height: 100%;
+    text-align: center;
+}
+
+.content {
+    background-color: white;
+    width: fit-content;
+    margin: auto;
+
+    border: 4px black ridge;
+    padding: 20px;
+}
+
+.cats{
+    display: inline;
+}
+
+.catimg {
+    animation: flip 2s infinite;
+}
+
+@keyframes flip {
+    0% {
+        transform: scale(-1, 1);
+    }
+    50% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(-1, 1);
+    }
+}
+
+ul{
+    list-style: none;
+}
+li{
+    padding: 0px;
+
+}
