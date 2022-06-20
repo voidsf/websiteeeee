@@ -3,6 +3,7 @@ body {
     background-repeat: repeat;
     height: 100%;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 .content {
@@ -20,6 +21,17 @@ body {
 
 .catimg {
     animation: flip 2s infinite;
+}
+
+.footer{
+    background-color: white;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    border: 4px black ridge;
+    padding: 10px;
+    border-bottom: none;
 }
 
 @keyframes flip {
