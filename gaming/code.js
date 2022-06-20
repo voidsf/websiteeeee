@@ -25,6 +25,5 @@ canvas.addEventListener("mousemove", function(e){
     if (!e) e = window.event;
     mouseX = e.offsetX;
     mouseY = e.offsetY;
-    ctx.fillStyle = "#ffffff";
-    ctx.fillRect(x,y,20,20);    
+      
 });
