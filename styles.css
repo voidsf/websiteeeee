@@ -23,17 +23,6 @@ body {
     animation: flip 2s infinite;
 }
 
-.footer{
-    background-color: white;
-    width: fit-content;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    border: 4px black ridge;
-    padding: 10px;
-    border-bottom: none;
-}
-
 @keyframes flip {
     0% {
         transform: scale(-1, 1);
@@ -46,10 +35,20 @@ body {
     }
 }
 
+.footer{
+    background-color: white;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    border: 4px black ridge;
+    padding: 10px;
+    border-bottom: none;
+}
+
 ul{
     list-style: none;
 }
 li{
     padding: 0px;
-
 }
