@@ -27,6 +27,7 @@ body {
 .sidebar{
     margin-right: 0px;
     border-right: none;
+    width: fit-content;
 }
 
 .cats{
