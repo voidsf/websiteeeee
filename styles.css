@@ -19,6 +19,7 @@ body {
 
     border: 4px black ridge;
     padding: 20px;
+    align-items: flex-start;
 }
 
 .cats{
