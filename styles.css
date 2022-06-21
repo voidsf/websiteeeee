@@ -6,6 +6,11 @@ body {
     margin-bottom: 0px;
     font-family: Garamond, serif;
 }
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
 
 .content {
     background-color: white;
