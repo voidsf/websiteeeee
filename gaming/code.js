@@ -1,29 +1,14 @@
-var canvas = document.getElementById("drawcanvas");
-var ctx = canvas.getContext("2d");
+function main(){
+    const canvas = document.getElementById("drawcanvas");
+    const gl = canvas.getContext("webgl");
 
-var kibbyImage = new Image();
-kibbyImage.src = "assets/images/kibby.png";
+    if (gl === null){
+        alert("webgl is not supported in your browser");
+        return;
+    }
 
-var mouseX = 0;
-var mouseY = 0;
-
-
-function draw(){
-    
-    ctx.fillStyle = "#000000";
-    ctx.fillRect(0,0,400,400);
-
-    ctx.drawImage(kibbyImage, mouseX - 50, mouseY - 50);
+    gl.clearColor(0.0, 0.0, 0.0, 1.0);
+    gl.clear(gl.COLOR_BUFFER_BIT);
 }
 
-setInterval(() => {
-    draw();
-}, 20);
-
-
-canvas.addEventListener("mousemove", function(e){
-    if (!e) e = window.event;
-    mouseX = e.offsetX;
-    mouseY = e.offsetY;
-      
-});
+window.onload = main;
