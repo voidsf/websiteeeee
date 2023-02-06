@@ -27,3 +27,17 @@ canvas.addEventListener("mousemove", function(e){
     mouseY = e.offsetY;
       
 });
+
+main();
+
+function main(){
+    const canvas = document.querySelector("#glCanvas");
+    const gl = canvas.getContext("webgl");
+
+    if (gl === null){
+        alert("Unable to initialise WebGL.");
+        return;
+    }
+    gl.clearColor(0.0, 0.0, 0.0, 1.0);
+
+}
